@@ -1,0 +1,59 @@
+.d-flex{
+    display: flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.modulos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 50px;
+}
+
+.modulos .card{
+    background-color: #fff;
+    height: 100%;
+    padding: 30px 25px 35px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, .08);
+    transition: all .3s ease-in;
+}
+
+.modulos .card:hover{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .20);;
+}
+
+.card > div.icon{
+    width: 70px;
+    height: 70px;
+    background-color: #D32F2F;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgba(211, 47, 47, .3);
+}
+
+div.icon i{
+    color: white;
+    font-size: 25px;
+}
+
+.card h2{
+    color: #303749;
+    margin-bottom: 15px;
+    font-size: 22px !important;
+}
+
+.card p{
+    color: #9096a1;
+    font-size: 14px;
+}
+
+#btnGuardar{
+    min-width: 93px;
+}

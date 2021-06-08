@@ -1,0 +1,216 @@
+:root{
+    --primary-color: #fa4f4f;
+    --white: #fff;
+    --text-color: #444444;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 16px;
+}
+
+.separator{
+    display: block;
+    margin: 40px 0px;
+    opacity: .4;
+}
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.login > div{
+    height: 100%;
+    width: 100%;
+}
+
+.login .right{
+    position: relative;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.right:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    clip-path: circle(50% at 50% 50%);
+    background-color: #F97778;
+    width: 400px;
+    height: 400px;
+}
+
+.right h1{
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.right p{
+    margin: 0;
+    color: var(--white);
+    font-weight: 300;
+}
+
+.right img{
+    width: 100px;
+    margin-bottom: 100px;
+}
+
+.login .left{
+    padding: 50px 55px;
+}
+
+.left h2{
+    text-align: center;
+    color: #686868;
+    margin-bottom: 30px;
+}
+
+.left p{
+    color: #444444;
+    text-align: center;
+    max-width: 450px;
+    margin: 30px auto;
+}
+
+.t-form{
+    width: 80%;
+    margin: auto;
+}
+
+.form-group-t{
+    margin-bottom: 30px;
+}
+
+.form-group-t label{
+    display: block;
+    color: #858585;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.form-group-t .control-t{
+    width: 100%;
+    height: 45px;
+    border: 2px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    color: var(--text-color);
+    transition: border .3s ease-out;
+}
+
+.form-group-t .control-t:focus{
+    outline: none;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-t{
+    width: 100%;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,.1);
+    transition: background-color .3s ease-in-out;
+}
+
+.btn-t:hover{
+    background-color: #ff3131;
+}
+
+.btn-t:focus{
+    outline: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social > li{
+    margin: 0px 20px;
+}
+
+.social > li i{
+    font-size: 25px;
+}
+
+.social > li > a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.social > li > a:hover{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.facebook{
+    background-color: #3C5489;
+}
+
+.instagram{
+    background-image: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+}
+
+.whatsapp{
+    background-color: #1EBEA5;
+}
+
+.fa-spinner{
+    animation: spinner .5s infinite;
+    font-size: 20px;
+    color: white;
+}
+
+.error{
+    color: #dc3545;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
